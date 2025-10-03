@@ -1,5 +1,5 @@
 <?php
-session_start();
-session_destroy();
-header("Location: index.php");
+session_start(); //Inicia la sesión
+session_destroy(); //Cierra la sesión XD
+header("Location: index.php"); //Vuelve a index.php
 exit();

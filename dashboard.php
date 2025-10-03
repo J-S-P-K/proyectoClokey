@@ -1,12 +1,13 @@
 <?php
-session_start();
-if (!isset($_SESSION['usuario'])) {
+session_start(); //Inicia la sesión
+if (!isset($_SESSION['usuario'])) { //
   header("Location: index.php");
   exit();
 }
 ?>
 
-<!DOCTYPE html>
+<!--  -->
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8">

@@ -1,3 +1,4 @@
+
 <?php
 // datos conexión
 $servername = "localhost";

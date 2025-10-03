@@ -1,16 +1,21 @@
 <?php
 session_start();
 
+//Genera los datos de conexión a la base de datos "registros" (cambiar a la base de datos de infinityfree)
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "registros";
 
+//Crea la variable de conexión a la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);
+
+//Si hay un error en la conexión lo avisa
 if ($conn->connect_error) {
   die("Error de conexión: " . $conn->connect_error);
 }
 
+//Guarda los datos del nombre del usuario y su contraseña en variables correspondientes
 $usuario = $_POST['usuario'] ?? '';
 $contrasena = $_POST['contrasena'] ?? '';
 
